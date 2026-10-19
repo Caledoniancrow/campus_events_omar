@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <g id="sprout">
+      <path d="M0 0 C-2 -26 3 -52 0 -84" fill="none" stroke="#0F3B3F" stroke-width="7" stroke-linecap="round"/>
+      <path d="M0 -46 C-8 -76 -40 -88 -64 -72 C-50 -48 -24 -38 0 -46 Z" fill="#2A8A8E" stroke="#0F3B3F" stroke-width="5" stroke-linejoin="round"/>
+      <path d="M0 -62 C8 -94 42 -108 68 -92 C52 -66 24 -54 0 -62 Z" fill="#8FC1B8" stroke="#0F3B3F" stroke-width="5" stroke-linejoin="round"/>
+    </g>
+  </defs>
+  <rect width="800" height="600" fill="#FBEACA"/>
+  <g id="sun">
+    <circle cx="400" cy="420" r="320" fill="#FAE0AA"/>
+    <circle cx="400" cy="420" r="245" fill="#F8D58C"/>
+    <circle cx="400" cy="420" r="170" fill="#F5BE62"/>
+    <circle cx="400" cy="420" r="96" fill="#F2A93B"/>
+  </g>
+  <path d="M0 440 C150 408 300 432 420 424 S700 402 800 422 V600 H0 Z" fill="#2A8A8E"/>
+  <path d="M0 484 C180 442 330 474 440 464 S700 432 800 458 V600 H0 Z" fill="#0E6368"/>
+  <path d="M338 600 C350 546 388 504 406 470 L426 470 C440 506 482 548 538 600 Z" fill="#F8D58C"/>
+  <g id="seedlings">
+    <use href="#sprout" transform="translate(268 488) scale(0.8)"/>
+    <use href="#sprout" transform="translate(70 508) scale(0.95)"/>
+    <use href="#sprout" transform="translate(200 524) scale(1.15)"/>
+    <use href="#sprout" transform="translate(138 592) scale(1.55)"/>
+    <use href="#sprout" transform="translate(556 496) scale(0.8)"/>
+    <use href="#sprout" transform="translate(702 496) scale(1)"/>
+  </g>
+  <g id="books" stroke="#0F3B3F" stroke-width="6" stroke-linejoin="round">
+    <rect x="580" y="546" width="170" height="38" rx="6" fill="#D9694A"/>
+    <rect x="738" y="552" width="12" height="26" fill="#FFFBF0" stroke="none"/>
+    <rect x="596" y="510" width="146" height="36" rx="6" fill="#FFFBF0"/>
+    <rect x="612" y="522" width="62" height="6" rx="3" fill="#0E6368" stroke="none"/>
+    <rect x="588" y="476" width="156" height="34" rx="6" fill="#F2A93B"/>
+    <rect x="604" y="487" width="70" height="6" rx="3" fill="#0F3B3F" stroke="none"/>
+    <use href="#sprout" transform="translate(690 476) scale(0.62)"/>
+  </g>
+</svg>

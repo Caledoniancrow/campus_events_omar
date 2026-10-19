@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Save your place at Campus Care Day on Saturday 14 November 2026. Free, with 120 places.">
+  <title>Register for Campus Care Day | Campus Events Guide</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-top container">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="assets/images/logo.svg" alt="" width="40" height="40">
+        <span class="brand-text">
+          <span class="brand-name">Campus Events Guide</span>
+          <span class="brand-tagline">Show up. Learn. Pass it on.</span>
+        </span>
+      </a>
+      <div class="theme-switch">
+        <input class="theme-input" type="checkbox" id="theme-toggle">
+        <label class="theme-label" for="theme-toggle">
+          <span class="theme-text">Dark mode</span>
+          <span class="theme-track" aria-hidden="true"><span class="theme-knob"></span></span>
+        </label>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="Main">
+      <ul class="nav-list container">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="event-details.html">Details</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="registration.html" aria-current="page">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <div class="journey">
+          <p class="journey-text">Step 5 of 5: Register</p>
+          <div class="journey-bar" aria-hidden="true">
+            <span class="journey-step is-done"></span>
+            <span class="journey-step is-done"></span>
+            <span class="journey-step is-done"></span>
+            <span class="journey-step is-done"></span>
+            <span class="journey-step is-current"></span>
+          </div>
+        </div>
+        <h1>Register for Campus Care Day</h1>
+        <p class="lead"><time datetime="2026-11-14">Saturday 14 November 2026</time>, 9:00 AM to 5:00 PM, at Sunset Lawn and Main Hall. Free, with 120 places.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Registration">
+      <div class="container register-layout">
+        <form class="form" action="#" method="post" enctype="multipart/form-data">
+          <p class="form-note">Fields are required unless they say optional. This is a student project, so the form checks your answers but does not send them anywhere.</p>
+
+          <fieldset class="form-group">
+            <legend>About you</legend>
+            <div class="form-fields">
+              <div class="field">
+                <label for="attendee-name">Attendee name</label>
+                <input class="control" type="text" id="attendee-name" name="attendee-name" required minlength="2" maxlength="60" autocomplete="name">
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input class="control" type="email" id="email" name="email" required maxlength="80" autocomplete="email">
+              </div>
+              <div class="field">
+                <label for="mobile">Mobile number</label>
+                <input class="control" type="tel" id="mobile" name="mobile" required pattern="01[0125][0-9]{8}" maxlength="11" inputmode="numeric" autocomplete="tel" placeholder="01012345678" aria-describedby="mobile-hint" title="An Egyptian mobile number: 11 digits starting with 010, 011, 012 or 015">
+                <p class="hint" id="mobile-hint">11 digits. We only text if the weather changes.</p>
+              </div>
+              <div class="field">
+                <label for="profile">Website or social profile (optional)</label>
+                <input class="control" type="url" id="profile" name="profile" pattern="https?://.+" maxlength="120" placeholder="https://" aria-describedby="profile-hint" title="A web address that starts with http:// or https://">
+                <p class="hint" id="profile-hint">Start with https://</p>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <legend>Your day</legend>
+            <div class="form-fields">
+              <div class="field field-wide">
+                <label for="event-choice">Which event are you joining?</label>
+                <select class="control" id="event-choice" name="event-choice">
+                  <option value="care-day" selected>Campus Care Day, 14 November</option>
+                  <option value="info-session">Care Day Info Session, 4 November</option>
+                  <option value="reading-buddies">Reading Buddies Training, 9 November</option>
+                </select>
+              </div>
+              <fieldset class="choice-group field-wide">
+                <legend>Your crew</legend>
+                <div class="choice">
+                  <input type="radio" id="crew-cleanup" name="crew" value="clean-up" required>
+                  <label for="crew-cleanup">Clean-up crew</label>
+                </div>
+                <div class="choice">
+                  <input type="radio" id="crew-garden" name="crew" value="garden">
+                  <label for="crew-garden">Garden crew</label>
+                </div>
+                <div class="choice">
+                  <input type="radio" id="crew-reading" name="crew" value="reading-buddies">
+                  <label for="crew-reading">Reading buddies</label>
+                </div>
+                <div class="choice">
+                  <input type="radio" id="crew-any" name="crew" value="any" checked>
+                  <label for="crew-any">Wherever I am needed</label>
+                </div>
+              </fieldset>
+              <div class="field">
+                <label for="arrival">Arrival time</label>
+                <input class="control" type="time" id="arrival" name="arrival" required min="08:30" max="10:00" value="09:00" aria-describedby="arrival-hint">
+                <p class="hint" id="arrival-hint">Check-in opens at 8:30 AM. The briefing starts at 9:00 AM.</p>
+              </div>
+              <div class="field">
+                <label for="friends">Friends joining you</label>
+                <input class="control" type="number" id="friends" name="friends" min="0" max="3" step="1" value="0" aria-describedby="friends-hint">
+                <p class="hint" id="friends-hint">Between 0 and 3. We save seats for them.</p>
+              </div>
+              <div class="field">
+                <label for="hours">Hours you can give</label>
+                <input class="range-control" type="range" id="hours" name="hours" min="2" max="8" step="1" value="4" aria-describedby="hours-hint">
+                <div class="range-scale" aria-hidden="true">
+                  <span>2 hours</span>
+                  <span>8 hours</span>
+                </div>
+                <p class="hint" id="hours-hint">Slide to choose. It starts at 4 hours.</p>
+              </div>
+              <div class="field">
+                <label for="setup-day">Set-up day (optional)</label>
+                <input class="control" type="date" id="setup-day" name="setup-day" min="2026-11-12" max="2026-11-13" aria-describedby="setup-hint">
+                <p class="hint" id="setup-hint">Help the day before: Thursday 12 or Friday 13 November.</p>
+              </div>
+              <div class="field">
+                <label for="bib-colour">Bib colour</label>
+                <input class="color-control" type="color" id="bib-colour" name="bib-colour" value="#0E6368" aria-describedby="bib-hint">
+                <p class="hint" id="bib-hint">Pick a colour so your crew can spot you.</p>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <legend>A few more things</legend>
+            <div class="form-fields">
+              <div class="field field-wide">
+                <label for="waiver">Signed volunteer form (optional)</label>
+                <input class="control" type="file" id="waiver" name="waiver" accept=".pdf,image/*" aria-describedby="waiver-hint">
+                <p class="hint" id="waiver-hint">A PDF or a photo. You can also bring a printed copy.</p>
+              </div>
+              <div class="field field-wide">
+                <label for="access-needs">Access needs (optional)</label>
+                <textarea class="control" id="access-needs" name="access-needs" rows="4" maxlength="300" aria-describedby="access-hint"></textarea>
+                <p class="hint" id="access-hint">Seating, step-free routes, quiet breaks: tell us what would help. Up to 300 characters.</p>
+              </div>
+              <div class="field-wide">
+                <div class="choice">
+                  <input type="checkbox" id="reminder" name="reminder" value="yes">
+                  <label for="reminder">Text me a reminder the day before (optional)</label>
+                </div>
+                <div class="choice">
+                  <input type="checkbox" id="conduct" name="conduct" value="agreed" required>
+                  <label for="conduct">I agree to follow the volunteer code of conduct</label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="form-actions">
+            <button class="button button-primary" type="submit">Save my place</button>
+            <p>You will see a message from your browser if something needs fixing.</p>
+          </div>
+        </form>
+
+        <aside class="contact-box panel" aria-labelledby="contact-title">
+          <h2 id="contact-title">Questions?</h2>
+          <p>The Care Day team can help with access, timing or anything the form does not cover.</p>
+          <address>
+            <p><a href="mailto:events@campus-guide.example">events@campus-guide.example</a></p>
+            <p><a href="tel:+201000000000">+20&nbsp;100&nbsp;000&nbsp;0000</a></p>
+            <p>Student Activities Office, Main Hall<br>Weekdays, 10:00 AM to 4:00 PM</p>
+          </address>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <div class="footer-brand">
+        <p class="footer-name">Campus Events Guide</p>
+        <p class="footer-tagline">Show up. Learn. Pass it on.</p>
+      </div>
+      <nav aria-label="Social media">
+        <ul class="social-list">
+          <li><a href="https://www.facebook.com/ZewailCity" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          <li><a href="https://www.instagram.com/zewailcityst/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/school/zewailcityst/mycompany/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://www.youtube.com/user/zewailcity" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+          <li><a href="https://twitter.com/_ZewailCity_" target="_blank" rel="noopener noreferrer">X</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">A student project. The events shown are samples. Social links open the university's official pages in a new tab.</p>
+    </div>
+  </footer>
+</body>
+</html>

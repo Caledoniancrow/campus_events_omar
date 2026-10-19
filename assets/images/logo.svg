@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <clipPath id="sky">
+      <rect x="0" y="0" width="48" height="34"/>
+    </clipPath>
+  </defs>
+  <rect width="48" height="48" rx="12" fill="#0E6368"/>
+  <g clip-path="url(#sky)">
+    <circle cx="24" cy="34" r="22" fill="none" stroke="#F8D58C" stroke-width="3"/>
+    <circle cx="24" cy="34" r="15" fill="none" stroke="#F2A93B" stroke-width="3"/>
+    <circle cx="24" cy="34" r="8" fill="#F2A93B"/>
+  </g>
+  <rect x="8" y="35" width="32" height="4" rx="2" fill="#F5EBD3"/>
+</svg>

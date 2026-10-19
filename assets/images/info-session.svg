@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <g id="sprout">
+      <path d="M0 0 C-2 -26 3 -52 0 -84" fill="none" stroke="#0F3B3F" stroke-width="7" stroke-linecap="round"/>
+      <path d="M0 -46 C-8 -76 -40 -88 -64 -72 C-50 -48 -24 -38 0 -46 Z" fill="#2A8A8E" stroke="#0F3B3F" stroke-width="5" stroke-linejoin="round"/>
+      <path d="M0 -62 C8 -94 42 -108 68 -92 C52 -66 24 -54 0 -62 Z" fill="#8FC1B8" stroke="#0F3B3F" stroke-width="5" stroke-linejoin="round"/>
+    </g>
+  </defs>
+  <rect width="800" height="600" fill="#DCE8E2"/>
+  <circle cx="610" cy="600" r="380" fill="#CFE1D9"/>
+  <circle cx="610" cy="600" r="290" fill="#F8D58C"/>
+  <circle cx="610" cy="600" r="200" fill="#F5BE62"/>
+  <circle cx="610" cy="600" r="110" fill="#F2A93B"/>
+  <g stroke="#0F3B3F" stroke-width="7" stroke-linejoin="round">
+    <path d="M170 100 H590 a44 44 0 0 1 44 44 V300 a44 44 0 0 1 -44 44 H340 L262 424 L272 344 H170 a44 44 0 0 1 -44 -44 V144 a44 44 0 0 1 44 -44 Z" fill="#FFFBF0"/>
+    <path d="M470 372 H650 a36 36 0 0 1 36 36 V470 a36 36 0 0 1 -36 36 H628 L650 556 L572 506 H470 a36 36 0 0 1 -36 -36 V408 a36 36 0 0 1 36 -36 Z" fill="#F2A93B"/>
+  </g>
+  <rect x="170" y="152" width="290" height="20" rx="10" fill="#0F3B3F"/>
+  <rect x="170" y="196" width="360" height="20" rx="10" fill="#8FC1B8"/>
+  <rect x="170" y="240" width="230" height="20" rx="10" fill="#8FC1B8"/>
+  <use href="#sprout" transform="translate(560 316) scale(0.95)"/>
+  <circle cx="504" cy="440" r="13" fill="#0F3B3F"/>
+  <circle cx="560" cy="440" r="13" fill="#0F3B3F"/>
+  <circle cx="616" cy="440" r="13" fill="#0F3B3F"/>
+</svg>
