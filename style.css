@@ -65,7 +65,10 @@
   --radius-large: 1.25rem;
   --content-width: 72rem;
 }
-
+/* CSS-only dark mode: when the hidden checkbox #theme-toggle is ticked,
+   :has() matches :root, and the colour variables below replace the light
+   ones. Every rule uses var(--color-...), so the whole page switches
+   without JavaScript. */
 :root:has(#theme-toggle:checked) {
   color-scheme: dark;
   --color-page: #0B1F22;
@@ -324,7 +327,9 @@ a:hover {
 .main-nav {
   border-top: 1px solid var(--color-line);
 }
-
+/* Mobile-first nav: a wrapping flex row where each li grows to share the
+   line, so links stay large touch targets on phones. From 48em (768px) up,
+   the media query lets links keep their natural width instead. */
 .nav-list {
   display: flex;
   flex-wrap: wrap;
